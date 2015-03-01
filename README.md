@@ -57,5 +57,9 @@ The description covers it all.
 
 ## Changelog
 
+* 1.0.1
+    * Bug fix.
+    * Deleted the source code of unused.
+
 * 1.0.0
     * First public release.

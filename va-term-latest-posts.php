@@ -8,7 +8,7 @@ Plugin Name: VA Term Latest Posts Widget
 Plugin URI: http://visualive.jp/
 Description: This plugin adds a widget to display the new post list belonging to the specified term.
 Author: KUCKLU
-Version: 1.0.0
+Version: 1.0.1
 Author URI: http://visualive.jp/
 Text Domain: va-term-latest-posts
 Domain Path: /langs
@@ -68,19 +68,6 @@ class VA_TERM_LATEST_POSTS_WIDGET extends WP_Widget {
 			'classname'   => VA_TERM_LATEST_POSTS_WIDGET_TEXTDOMAIN,
 			'description' => __( 'Display the new post list belonging to the specified term.', VA_TERM_LATEST_POSTS_WIDGET_TEXTDOMAIN ),
 		) );
-
-		add_action( 'init', array( &$this, 'init') );
-	}
-
-	function init() {
-		global $allowedposttags;
-
-		$allowedposttags['time'] = array(
-			'datetime' => true,
-			'id'       => true,
-			'class'    => true,
-			'style'    => true
-		);
 	}
 
 	function widget( $args, $instance ) {
@@ -97,10 +84,10 @@ class VA_TERM_LATEST_POSTS_WIDGET extends WP_Widget {
 
 		$output             = get_transient( $widget_id );
 
-//		if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
-//			delete_transient( $widget_id );
-//			$output = false;
-//		}
+		if ( defined( 'WP_DEBUG' ) && WP_DEBUG ) {
+			delete_transient( $widget_id );
+			$output = false;
+		}
 
 		if ( !$output ) {
 			foreach ( $term_ids as $taxonomy => $ids ) {
