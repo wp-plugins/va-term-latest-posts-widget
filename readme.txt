@@ -1,7 +1,7 @@
 === VA Term Latest Posts Widget ===
 Contributors: kuck1u
 Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNPKX9MAJL7C8
-Tags: latest posts, recent posts, widget
+Tags: latest posts, recent posts, widget, post, posts, sidebar
 Requires at least: 4.0
 Tested up to: 4.1
 Stable tag: trunk
