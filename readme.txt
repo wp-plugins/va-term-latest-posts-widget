@@ -19,8 +19,7 @@ Please layout in the style sheet of the theme.
 
 **CSS Classes**
 
-```
-.va-term-latest-posts {
+`.va-term-latest-posts {}
 .post_list {}
 .post_list_items {}
 .post_list_items_anchor {}
@@ -28,8 +27,7 @@ Please layout in the style sheet of the theme.
 .post_list_items_thumbnail img {}
 .post_list_items_meta {}
 .post_list_items_meta_title {}
-.post_list_items_meta_date {}
-```
+.post_list_items_meta_date {}`
 
 **Hint**  
 HTML output from Widget is done cached for a certain time.  
