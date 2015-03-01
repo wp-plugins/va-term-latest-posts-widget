@@ -17,9 +17,9 @@ This plugin adds a widget to display the new post list belonging to the specifie
 The style sheet for the Widget not included.  
 Please layout in the style sheet of the theme.
 
-** CSS Classes **
-```
-.va-term-latest-posts {
+**CSS Classes**
+
+`.va-term-latest-posts {}
 .post_list {}
 .post_list_items {}
 .post_list_items_anchor {}
@@ -27,10 +27,9 @@ Please layout in the style sheet of the theme.
 .post_list_items_thumbnail img {}
 .post_list_items_meta {}
 .post_list_items_meta_title {}
-.post_list_items_meta_date {}
-```
+.post_list_items_meta_date {}`
 
-** Hint **  
+**Hint**  
 HTML output from Widget is done cached for a certain time.  
 If WP_DEBUG is TRUE, each time the cache is deleted.
 
